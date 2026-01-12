@@ -72,32 +72,33 @@ p , h2{
     color: white;
 }
 
-/* ----- PAGE D’ACCUEIL ----- */
+/* ----- PAGE D’ACCUEIL ----- *
 .intro1, .intro2 {
-  display: flex;
+  display: contents;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center ;
   margin: 40px 0;
   gap: 20px;
 }
 
 /* Texte à gauche, image à droite */
-.intro1 {
-  flex-direction: row; /* ordre normal */
+/*.intro1 {
+  flex-direction: row-reverse; /* ordre normal *
 }
 
-/* Texte à droite, image à gauche */
+/* Texte à droite, image à gauche *
 .intro2 {
-  flex-direction: row-reverse; /* inverse l’ordre */
-}
+  flex-direction: row-reverse; /* inverse l’ordre *
+}*/
 
-.intro1 p, .intro2 p {
-  width: 45%;
+.intro1 h1, .intro2 h1 {
+  width: 80%;
   font-size: 18px;
 }
 
 .intro1 img, .intro2 img {
-  width: 50%;
+  margin-left: 125px;
+  width: 80%;
   border-radius: 10px;
 }
 
@@ -118,9 +119,10 @@ img {
 }*/
 
 img:hover {
-  transform: scale(1.05);   /* zoom */
+  transform: scale(1.01);   /* zoom */
   filter: brightness(1.2); /* éclaircit l’image */
   transition: 0.3s;        /* animation fluide */
+  border-radius: 8px;
 }
 
 .titre{
@@ -177,49 +179,6 @@ img:hover {
 }
 
 
-/*.tof1, .tof2, .tof3, .tof4, .tof5, .tof6, .tof7, .tof8 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  background: rgba(255,255,255,0.1);
-  border: 1px solid rgba(255,255,255,0.3);
-  padding: 20px;
-  border-radius: 10px;
-  margin: 20px auto;
-  width: 90%;
-}
-
-.tof1:nth-child(even),
-.tof2:nth-child(even),
-.tof3:nth-child(even),
-.tof4:nth-child(even) {
-  flex-direction: row-reverse; /* alterne les côtés *
-}
-
-.tof1 img, .tof2 img, .tof3 img, .tof4 img,
-.tof5 img, .tof6 img, .tof7 img, .tof8 img {
-  width: 40%;
-  border-radius: 10px;
-}
-
-.tof1 p, .tof2 p, .tof3 p, .tof4 p,
-.tof5 p, .tof6 p, .tof7 p, .tof8 p {
-  width: 55%;
-  font-size: 17px;
-  color: #fff;
-}*//*   use ceci */
-
-
-/*.tof1, .tof2, .tof3 , .tof4, .tof5 , .tof6 , .tof7, .tof8{
-    color: #f30707;
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-*/
 /* Version mobile (menu en colonne) */
 
 @media (max-width: 700px) {
